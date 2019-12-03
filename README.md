@@ -1,0 +1,1 @@
+# ngx-color-picker
