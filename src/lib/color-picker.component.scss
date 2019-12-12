@@ -11,6 +11,12 @@
     box-sizing: border-box;
 }
 
+.color-picker-position{
+    position: absolute;
+    top: 100px;
+    right: 435px;
+}
+
 @mixin border-radius($radius) {
     -moz-border-radius: $radius;
     -webkit-border-radius: $radius;
@@ -253,7 +259,6 @@
 
         .box{
             input{
-                @include flex(1);
                 margin: 0;
                 float:left;
                 border: #000000 solid 1px;
@@ -267,6 +272,7 @@
                 text-align: center;
                 color: #555;
                 width: 40px;
+                margin: auto;
 
                 &:last-child{
                     margin-right: 0;
@@ -292,6 +298,7 @@
                 float:left;
                 clear: left;
                 width: 40px;
+                margin: auto;
             }
         }
     }
@@ -350,15 +357,20 @@
 }
 
 .round-btn  {
-    background: transparent;
+    background: #767676;
     border: none;
     padding: 0;
     margin: 0;
-    width: 26px;
-    height: 26px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
     i {
-        color: #767676;
-        font-size: 26px;
+        color: #d9d9d9;
+        font-size: 14px;
+        position: relative;
+        top: 1px;
+        left: 0;
         cursor: pointer;
     }
 }
@@ -374,9 +386,9 @@
     margin: 0;
     flex-grow: 1;
     font-family: Roboto;
-    color: #767676;
-    font-weight: 700;
-    font-size: 18pt;
+    color: #000000;
+    font-weight: 7  00;
+    font-size: 14pt;
     line-height: 1.1;
     letter-spacing: .1px;
     display: inline-block;
@@ -404,9 +416,9 @@
 
 .box-footer {
     display: flex;
-    height: 71px;
+    height: 50px;
     width: 270px;
-    padding: 18px 15px;
+    padding: 10px 15px;
     border-top: 1px solid #767676;
 }
 
@@ -420,12 +432,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
-    height: 35px;
+    height: 30px;
     width: 110px;
     border-radius: 35px;
     cursor: pointer;
+    padding: 0px;
 }
 
 .white-font {

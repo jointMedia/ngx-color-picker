@@ -130,7 +130,7 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
     ngOnInit() {
         let alphaWidth = this.alphaSlider.nativeElement.offsetWidth;
         let hueWidth = this.hueSlider.nativeElement.offsetWidth;
-        this.sliderDimMax = new SliderDimension(hueWidth, this.cpWidth, 130, alphaWidth);
+        this.sliderDimMax = new SliderDimension(hueWidth + 42, this.cpWidth - 32, 130, alphaWidth);
         this.slider = new SliderPosition(0, 0, 0, 0);
         if (this.cpOutputFormat === 'rgba') {
             this.format = 1;
@@ -145,7 +145,7 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        if (this.cpWidth != 230) {
+        if (this.cpWidth != 272) {
             let alphaWidth = this.alphaSlider.nativeElement.offsetWidth;
             let hueWidth = this.hueSlider.nativeElement.offsetWidth;
             this.sliderDimMax = new SliderDimension(hueWidth, this.cpWidth, 130, alphaWidth);
@@ -436,7 +436,7 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
     }
 
     setSaturationAndBrightness(val: { s: number, v: number, rgX: number, rgY: number }) {
-        this.hsva.s = val.s / val.rgX;
+        this.hsva.s = val.s / val.rgX ;
         this.hsva.v = val.v / val.rgY;
         this.update();
         this.directiveInstance.sliderChanged({slider: 'lightness', value: this.hsva.v, color: this.outputColor});
