@@ -19,7 +19,6 @@
   cursor: default;
   width: 230px;
   height: auto;
-  border: #777 solid 1px;
   position: absolute;
   z-index: 100000;
   background-color: #fff;
@@ -285,11 +284,12 @@
   display: flex;
   align-items: center;
   justify-content: center; }
-  .closeBtn:hover {
-    background-color: black; }
 
 .mlgrey-font {
   color: #d9d9d9; }
+
+.lgrey-back {
+  background-color: #efefef; }
 
 .mdgrey-back {
   background-color: #767676; }
@@ -310,8 +310,7 @@
   flex-direction: row;
   align-items: center;
   padding: 13px 15px;
-  border-bottom: 1px solid #767676;
-  width: 270px;
+  width: 272px;
   background-color: #efefef; }
 
 .color-picker-body {
@@ -321,9 +320,8 @@
 .box-footer {
   display: flex;
   height: 50px;
-  width: 270px;
-  padding: 10px 15px;
-  border-top: 1px solid #767676; }
+  width: 272px;
+  padding: 10px 15px; }
 
 .mlgrey-back {
   background-color: #d9d9d9; }
