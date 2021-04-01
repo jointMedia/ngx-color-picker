@@ -397,7 +397,7 @@ var ColorPickerComponent = (function () {
         { type: core_1.Component, args: [{
                     selector: 'color-picker',
                     templateUrl: './color-picker.component.html',
-                    styleUrls: ['./color-picker.component.css']
+                    styleUrls: ['./color-picker.component.scss']
                 },] },
     ];
     /** @nocollapse */
