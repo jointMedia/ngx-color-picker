@@ -47,7 +47,7 @@
     cursor: default;
     width: 230px;
     height: auto;
-    border:#777 solid 1px;
+    // border:#777 solid 1px;
     position:absolute;
     z-index:100000;
     background-color: #fff;
@@ -388,14 +388,14 @@
     align-items: center;
     justify-content: center;
    
-    &:hover {
-        background-color: black;
-    }
 }
 .mlgrey-font  {
     color: #d9d9d9;
 }
 
+.lgrey-back{
+    background-color: rgb(239, 239, 239);
+}
 .mdgrey-back {
     background-color: #767676;
 }
@@ -417,8 +417,8 @@
     flex-direction: row;
     align-items: center;
     padding: 13px 15px;
-    border-bottom: 1px solid #767676;
-    width: 270px;
+    // border-bottom: 1px solid #767676;
+    width: 272px;
     background-color: #efefef;
 }
 
@@ -435,9 +435,9 @@
 .box-footer {
     display: flex;
     height: 50px;
-    width: 270px;
+    width: 272px;
     padding: 10px 15px;
-    border-top: 1px solid #767676;
+    // border-top: 1px solid #767676;
 }
 
 .mlgrey-back{
