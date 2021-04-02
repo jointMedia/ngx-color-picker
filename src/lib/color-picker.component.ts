@@ -8,7 +8,7 @@ import { SliderPosition, SliderDimension, detectIE } from './helpers';
 @Component({
     selector: 'color-picker',
     templateUrl: './color-picker.component.html',
-    styleUrls: ['./color-picker.component.scss']
+    styleUrls: ['./color-picker.component.css']
 })
 
 export class ColorPickerComponent implements OnInit, AfterViewInit {
