@@ -300,7 +300,7 @@
   font-family: Roboto;
   color: #767676;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1;
   letter-spacing: .1px;
   display: inline-block; }
@@ -310,11 +310,10 @@
   flex-direction: row;
   align-items: center;
   padding: 13px 15px;
-  width: 272px;
-  background-color: #efefef; }
+  width: 272px; }
 
 .color-picker-body {
-  background-color: #efefef;
+  background-color: white;
   padding: 15px; }
 
 .box-footer {

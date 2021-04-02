@@ -1,8 +1,8 @@
 <div class="color-picker color-picker-position" [style.visibility]="hidden || !show ? 'hidden' : 'visible'" [style.height.px]="cpHeight" [style.width.px]="cpWidth"
      #dialogPopup>
-    <header class="header-conatiner mdgrey-back" style="height: 50px;">
-        <h5 class="text-uppercase head-content"> Edit Color </h5>
-        <button class="closeBtn lgrey-back" type="button" data-testid="color-picker-close"
+    <header class="header-conatiner lgrey-back" style="height: 50px;">
+        <span class="text-uppercase head-content"> Edit Color </span>
+        <button class="closeBtn mdgrey-back" type="button" data-testid="color-picker-close"
             (click)="cancelColor($event)">
             <i aria-hidden="true" class="fas fa-times white-font"></i>
         </button>
@@ -98,13 +98,13 @@
         <button *ngIf="cpCancelButton" type="button" class="{{cpCancelButtonClass}}" (click)="cancelColor($event)">{{cpCancelButtonText}}</button>
     </div> -->
     </div>
-    <footer class="box-footer mlgrey-back">
+    <footer class="box-footer lgrey-back">
         <div class="ng-star-inserted" style="width: 110px;">
             <button class="btn wide-btn text-uppercase black-back white-font" type="button" data-testid="color-picker-save" (click)="oKColor($event)">
             SAVE </button>
         </div>
         <div class="ng-star-inserted " style="width: 110px; margin-left: 20px;">
-            <button class="btn wide-btn grey-back text-uppercase black-back white-font" type="button" data-testid="color-picker-cancel" (click)="cancelColor($event)">
+            <button class="btn wide-btn grey-back text-uppercase mdgrey-back white-font" type="button" data-testid="color-picker-cancel" (click)="cancelColor($event)">
             Cancel</button>
         </div>
     </footer>
