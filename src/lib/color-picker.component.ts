@@ -70,6 +70,7 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
     private useRootViewContainer: boolean = false;
 
     private isIE10: boolean = false;
+    public headerName: string = "Edit Color";
 
     @ViewChild('hueSlider') hueSlider: any;
     @ViewChild('alphaSlider') alphaSlider: any;

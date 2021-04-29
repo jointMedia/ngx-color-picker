@@ -58,6 +58,7 @@ export declare class ColorPickerComponent implements OnInit, AfterViewInit {
     private dialogArrowOffset;
     private useRootViewContainer;
     private isIE10;
+    headerName: string;
     hueSlider: any;
     alphaSlider: any;
     dialogElement: any;

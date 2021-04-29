@@ -1,7 +1,7 @@
 <div class="color-picker color-picker-position" [style.visibility]="hidden || !show ? 'hidden' : 'visible'" [style.height.px]="cpHeight" [style.width.px]="cpWidth"
      #dialogPopup>
     <header class="header-conatiner lgrey-back" style="height: 50px;">
-        <span class="text-uppercase head-content"> Edit Color </span>
+        <span class="text-uppercase head-content"> {{headerName}} </span>
         <button class="closeBtn mdgrey-back" type="button" data-testid="color-picker-close"
             (click)="cancelColor($event)">
             <i aria-hidden="true" class="fas fa-times white-font"></i>
