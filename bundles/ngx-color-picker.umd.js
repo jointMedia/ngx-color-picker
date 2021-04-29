@@ -321,7 +321,7 @@ var ColorPickerComponent = (function () {
         this.isIE10 = false;
         this.headerName = "Edit Color";
     }
-    ColorPickerComponent.prototype.setDialog = function (instance, elementRef, color, cpPosition, cpPositionOffset, cpPositionRelativeToArrow, cpOutputFormat, cpPresetLabel, cpPresetEmptyMessage, cpPresetEmptyMessageClass, cpPresetColors, cpMaxPresetColorsLength, cpCancelButton, cpCancelButtonClass, cpCancelButtonText, cpOKButton, cpOKButtonClass, cpOKButtonText, cpAddColorButton, cpAddColorButtonClass, cpAddColorButtonText, cpRemoveColorButtonClass, cpHeight, cpWidth, cpIgnoredElements, cpDialogDisplay, cpSaveClickOutside, cpAlphaChannel, cpUseRootViewContainer) {
+    ColorPickerComponent.prototype.setDialog = function (instance, elementRef, color, cpPosition, cpPositionOffset, cpPositionRelativeToArrow, cpOutputFormat, cpPresetLabel, cpPresetEmptyMessage, cpPresetEmptyMessageClass, cpPresetColors, cpMaxPresetColorsLength, cpCancelButton, cpCancelButtonClass, cpCancelButtonText, cpOKButton, cpOKButtonClass, cpOKButtonText, cpAddColorButton, cpAddColorButtonClass, cpAddColorButtonText, cpRemoveColorButtonClass, cpHeight, cpWidth, cpIgnoredElements, cpDialogDisplay, cpSaveClickOutside, cpAlphaChannel, cpUseRootViewContainer, headerName) {
         this.directiveInstance = instance;
         this.initialColor = color;
         this.directiveElementRef = elementRef;
@@ -361,6 +361,7 @@ var ColorPickerComponent = (function () {
             this.cpAlphaChannel = 'disabled';
         }
         this.isIE10 = helpers_1.detectIE() === 10;
+        this.headerName = headerName;
     };
     ColorPickerComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -995,6 +996,7 @@ var ColorPickerDirective = (function () {
         this.cpSaveClickOutside = true;
         this.cpAlphaChannel = 'enabled';
         this.cpUseRootViewContainer = false;
+        this.headerName = 'Edit Color';
         this.cpInputChange = new core_1.EventEmitter(true);
         this.cpToggleChange = new core_1.EventEmitter(true);
         this.cpSliderChange = new core_1.EventEmitter(true);
@@ -1066,7 +1068,7 @@ var ColorPickerDirective = (function () {
             var compFactory = this.cfr.resolveComponentFactory(color_picker_component_1.ColorPickerComponent);
             var injector = core_1.ReflectiveInjector.fromResolvedProviders([], vcRef.parentInjector);
             this.cmpRef = vcRef.createComponent(compFactory, 0, injector, []);
-            this.cmpRef.instance.setDialog(this, this.elRef, this.colorPicker, this.cpPosition, this.cpPositionOffset, this.cpPositionRelativeToArrow, this.cpOutputFormat, this.cpPresetLabel, this.cpPresetEmptyMessage, this.cpPresetEmptyMessageClass, this.cpPresetColors, this.cpMaxPresetColorsLength, this.cpCancelButton, this.cpCancelButtonClass, this.cpCancelButtonText, this.cpOKButton, this.cpOKButtonClass, this.cpOKButtonText, this.cpAddColorButton, this.cpAddColorButtonClass, this.cpAddColorButtonText, this.cpRemoveColorButtonClass, this.cpHeight, this.cpWidth, this.cpIgnoredElements, this.cpDialogDisplay, this.cpSaveClickOutside, this.cpAlphaChannel, this.cpUseRootViewContainer);
+            this.cmpRef.instance.setDialog(this, this.elRef, this.colorPicker, this.cpPosition, this.cpPositionOffset, this.cpPositionRelativeToArrow, this.cpOutputFormat, this.cpPresetLabel, this.cpPresetEmptyMessage, this.cpPresetEmptyMessageClass, this.cpPresetColors, this.cpMaxPresetColorsLength, this.cpCancelButton, this.cpCancelButtonClass, this.cpCancelButtonText, this.cpOKButton, this.cpOKButtonClass, this.cpOKButtonText, this.cpAddColorButton, this.cpAddColorButtonClass, this.cpAddColorButtonText, this.cpRemoveColorButtonClass, this.cpHeight, this.cpWidth, this.cpIgnoredElements, this.cpDialogDisplay, this.cpSaveClickOutside, this.cpAlphaChannel, this.cpUseRootViewContainer, this.headerName);
             this.dialog = this.cmpRef.instance;
             if (this.vcRef !== vcRef) {
                 this.cmpRef.changeDetectorRef.detectChanges();
@@ -1236,6 +1238,10 @@ var ColorPickerDirective = (function () {
         core_1.Input('cpUseRootViewContainer'),
         __metadata("design:type", Boolean)
     ], ColorPickerDirective.prototype, "cpUseRootViewContainer", void 0);
+    __decorate([
+        core_1.Input('headerName'),
+        __metadata("design:type", String)
+    ], ColorPickerDirective.prototype, "headerName", void 0);
     __decorate([
         core_1.Output('cpInputChange'),
         __metadata("design:type", Object)

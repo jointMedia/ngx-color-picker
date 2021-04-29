@@ -43,6 +43,7 @@ export class ColorPickerDirective implements OnInit, OnChanges, OnDestroy {
     @Input('cpSaveClickOutside') cpSaveClickOutside: boolean = true;
     @Input('cpAlphaChannel') cpAlphaChannel: string = 'enabled';
     @Input('cpUseRootViewContainer') cpUseRootViewContainer: boolean = false;
+    @Input('headerName') headerName:string = 'Edit Color';
 
     @Output('cpInputChange') cpInputChange = new EventEmitter<any>(true);
 
@@ -139,7 +140,8 @@ export class ColorPickerDirective implements OnInit, OnChanges, OnDestroy {
                 this.cpAddColorButton, this.cpAddColorButtonClass, this.cpAddColorButtonText,
                 this.cpRemoveColorButtonClass,
                 this.cpHeight, this.cpWidth, this.cpIgnoredElements,
-                this.cpDialogDisplay, this.cpSaveClickOutside, this.cpAlphaChannel, this.cpUseRootViewContainer);
+                this.cpDialogDisplay, this.cpSaveClickOutside, this.cpAlphaChannel, this.cpUseRootViewContainer,
+                this.headerName);
             this.dialog = this.cmpRef.instance;
 
             if (this.vcRef !== vcRef) {
