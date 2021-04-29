@@ -36,6 +36,7 @@ export declare class ColorPickerDirective implements OnInit, OnChanges, OnDestro
     cpSaveClickOutside: boolean;
     cpAlphaChannel: string;
     cpUseRootViewContainer: boolean;
+    headerName: string;
     cpInputChange: EventEmitter<any>;
     cpToggleChange: EventEmitter<boolean>;
     cpSliderChange: EventEmitter<any>;
