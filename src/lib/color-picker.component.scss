@@ -50,6 +50,7 @@
     // border:#777 solid 1px;
     position:absolute;
     z-index:100000;
+    border: 1px solid rgb(217, 217, 217);
     background-color: #fff;
 
     -webkit-touch-callout: none;
@@ -418,7 +419,7 @@
     align-items: center;
     padding: 13px 15px;
     // border-bottom: 1px solid #767676;
-    width: 272px;
+    width: 270px;
     // background-color: #efefef;
 }
 
@@ -435,7 +436,7 @@
 .box-footer {
     display: flex;
     height: 50px;
-    width: 272px;
+    width: 270px;
     padding: 10px 15px;
     // border-top: 1px solid #767676;
 }
