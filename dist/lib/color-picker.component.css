@@ -21,6 +21,7 @@
   height: auto;
   position: absolute;
   z-index: 100000;
+  border: 1px solid #d9d9d9;
   background-color: #fff;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -310,7 +311,7 @@
   flex-direction: row;
   align-items: center;
   padding: 13px 15px;
-  width: 272px; }
+  width: 270px; }
 
 .color-picker-body {
   background-color: white;
@@ -319,7 +320,7 @@
 .box-footer {
   display: flex;
   height: 50px;
-  width: 272px;
+  width: 270px;
   padding: 10px 15px; }
 
 .mlgrey-back {
