@@ -101,11 +101,11 @@
     <footer class="box-footer lgrey-back">
         <div class="ng-star-inserted" style="width: 110px;">
             <button class="btn wide-btn text-uppercase black-back white-font" type="button" data-testid="color-picker-save" (click)="oKColor($event)">
-            SAVE </button>
+            {{saveBtnTxt}} </button>
         </div>
         <div class="ng-star-inserted " style="width: 110px; margin-left: 20px;">
             <button class="btn wide-btn grey-back text-uppercase mdgrey-back white-font" type="button" data-testid="color-picker-cancel" (click)="cancelColor($event)">
-            Cancel</button>
+            {{cancelBtnTxt}}</button>
         </div>
     </footer>
 </div>

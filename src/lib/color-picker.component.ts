@@ -71,6 +71,8 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
 
     private isIE10: boolean = false;
     public headerName: string = "Edit Color";
+    public saveBtnTxt: string = "'Save'";
+    public cancelBtnTxt: string = "'Cancel'"
 
     @ViewChild('hueSlider') hueSlider: any;
     @ViewChild('alphaSlider') alphaSlider: any;
@@ -85,7 +87,8 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
         cpOKButton: boolean, cpOKButtonClass: string, cpOKButtonText: string,
         cpAddColorButton: boolean, cpAddColorButtonClass: string, cpAddColorButtonText: string,
         cpRemoveColorButtonClass: string, cpHeight: string, cpWidth: string,
-        cpIgnoredElements: any, cpDialogDisplay: string, cpSaveClickOutside: boolean, cpAlphaChannel: string, cpUseRootViewContainer: boolean,headerName: string) {
+        cpIgnoredElements: any, cpDialogDisplay: string, cpSaveClickOutside: boolean, cpAlphaChannel: string, cpUseRootViewContainer: boolean,headerName: string, saveBtnTxt: string,
+        cancelBtnTxt: string ) {
         this.directiveInstance = instance;
         this.initialColor = color;
         this.directiveElementRef = elementRef;
@@ -127,6 +130,8 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
 
         this.isIE10 = detectIE() === 10;
         this.headerName = headerName;
+        this.saveBtnTxt = saveBtnTxt;
+        this.cancelBtnTxt = cancelBtnTxt;
     }
 
     ngOnInit() {
