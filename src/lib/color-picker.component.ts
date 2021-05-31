@@ -71,8 +71,8 @@ export class ColorPickerComponent implements OnInit, AfterViewInit {
 
     private isIE10: boolean = false;
     public headerName: string = "Edit Color";
-    public saveBtnTxt: string = "'Save'";
-    public cancelBtnTxt: string = "'Cancel'"
+    public saveBtnTxt: string = "Save";
+    public cancelBtnTxt: string = "Cancel"
 
     @ViewChild('hueSlider') hueSlider: any;
     @ViewChild('alphaSlider') alphaSlider: any;
