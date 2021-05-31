@@ -320,8 +320,8 @@ var ColorPickerComponent = (function () {
         this.useRootViewContainer = false;
         this.isIE10 = false;
         this.headerName = "Edit Color";
-        this.saveBtnTxt = "'Save'";
-        this.cancelBtnTxt = "'Cancel'";
+        this.saveBtnTxt = "Save";
+        this.cancelBtnTxt = "Cancel";
     }
     ColorPickerComponent.prototype.setDialog = function (instance, elementRef, color, cpPosition, cpPositionOffset, cpPositionRelativeToArrow, cpOutputFormat, cpPresetLabel, cpPresetEmptyMessage, cpPresetEmptyMessageClass, cpPresetColors, cpMaxPresetColorsLength, cpCancelButton, cpCancelButtonClass, cpCancelButtonText, cpOKButton, cpOKButtonClass, cpOKButtonText, cpAddColorButton, cpAddColorButtonClass, cpAddColorButtonText, cpRemoveColorButtonClass, cpHeight, cpWidth, cpIgnoredElements, cpDialogDisplay, cpSaveClickOutside, cpAlphaChannel, cpUseRootViewContainer, headerName, saveBtnTxt, cancelBtnTxt) {
         this.directiveInstance = instance;
