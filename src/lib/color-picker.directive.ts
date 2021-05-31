@@ -44,8 +44,8 @@ export class ColorPickerDirective implements OnInit, OnChanges, OnDestroy {
     @Input('cpAlphaChannel') cpAlphaChannel: string = 'enabled';
     @Input('cpUseRootViewContainer') cpUseRootViewContainer: boolean = false;
     @Input('headerName') headerName:string = 'Edit Color';
-    @Input('saveBtnTxt') saveBtnTxt: string = "'Save'";
-    @Input('cancelBtnTxt') cancelBtnTxt: string = "'Cancel'"
+    @Input('saveBtnTxt') saveBtnTxt: string = 'Save';
+    @Input('cancelBtnTxt') cancelBtnTxt: string = 'Cancel';
 
     @Output('cpInputChange') cpInputChange = new EventEmitter<any>(true);
 
