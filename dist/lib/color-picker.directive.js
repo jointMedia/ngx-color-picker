@@ -38,6 +38,8 @@ var ColorPickerDirective = (function () {
         this.cpAlphaChannel = 'enabled';
         this.cpUseRootViewContainer = false;
         this.headerName = 'Edit Color';
+        this.saveBtnTxt = "'Save'";
+        this.cancelBtnTxt = "'Cancel'";
         this.cpInputChange = new core_1.EventEmitter(true);
         this.cpToggleChange = new core_1.EventEmitter(true);
         this.cpSliderChange = new core_1.EventEmitter(true);
@@ -109,7 +111,7 @@ var ColorPickerDirective = (function () {
             var compFactory = this.cfr.resolveComponentFactory(color_picker_component_1.ColorPickerComponent);
             var injector = core_1.ReflectiveInjector.fromResolvedProviders([], vcRef.parentInjector);
             this.cmpRef = vcRef.createComponent(compFactory, 0, injector, []);
-            this.cmpRef.instance.setDialog(this, this.elRef, this.colorPicker, this.cpPosition, this.cpPositionOffset, this.cpPositionRelativeToArrow, this.cpOutputFormat, this.cpPresetLabel, this.cpPresetEmptyMessage, this.cpPresetEmptyMessageClass, this.cpPresetColors, this.cpMaxPresetColorsLength, this.cpCancelButton, this.cpCancelButtonClass, this.cpCancelButtonText, this.cpOKButton, this.cpOKButtonClass, this.cpOKButtonText, this.cpAddColorButton, this.cpAddColorButtonClass, this.cpAddColorButtonText, this.cpRemoveColorButtonClass, this.cpHeight, this.cpWidth, this.cpIgnoredElements, this.cpDialogDisplay, this.cpSaveClickOutside, this.cpAlphaChannel, this.cpUseRootViewContainer, this.headerName);
+            this.cmpRef.instance.setDialog(this, this.elRef, this.colorPicker, this.cpPosition, this.cpPositionOffset, this.cpPositionRelativeToArrow, this.cpOutputFormat, this.cpPresetLabel, this.cpPresetEmptyMessage, this.cpPresetEmptyMessageClass, this.cpPresetColors, this.cpMaxPresetColorsLength, this.cpCancelButton, this.cpCancelButtonClass, this.cpCancelButtonText, this.cpOKButton, this.cpOKButtonClass, this.cpOKButtonText, this.cpAddColorButton, this.cpAddColorButtonClass, this.cpAddColorButtonText, this.cpRemoveColorButtonClass, this.cpHeight, this.cpWidth, this.cpIgnoredElements, this.cpDialogDisplay, this.cpSaveClickOutside, this.cpAlphaChannel, this.cpUseRootViewContainer, this.headerName, this.saveBtnTxt, this.cancelBtnTxt);
             this.dialog = this.cmpRef.instance;
             if (this.vcRef !== vcRef) {
                 this.cmpRef.changeDetectorRef.detectChanges();
@@ -213,6 +215,8 @@ var ColorPickerDirective = (function () {
         'cpAlphaChannel': [{ type: core_1.Input, args: ['cpAlphaChannel',] },],
         'cpUseRootViewContainer': [{ type: core_1.Input, args: ['cpUseRootViewContainer',] },],
         'headerName': [{ type: core_1.Input, args: ['headerName',] },],
+        'saveBtnTxt': [{ type: core_1.Input, args: ['saveBtnTxt',] },],
+        'cancelBtnTxt': [{ type: core_1.Input, args: ['cancelBtnTxt',] },],
         'cpInputChange': [{ type: core_1.Output, args: ['cpInputChange',] },],
         'cpToggleChange': [{ type: core_1.Output, args: ['cpToggleChange',] },],
         'cpSliderChange': [{ type: core_1.Output, args: ['cpSliderChange',] },],
